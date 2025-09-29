@@ -1,0 +1,34 @@
+name: regrid-demo
+channels:
+  - conda-forge
+dependencies:
+  # Core
+  - python >=3.11
+  - pip
+
+  # Jupyter / Dev
+  - jupyterlab
+  - ipykernel
+  - ipywidgets
+  - matplotlib
+  - cartopy
+  - cf_xarray
+  - cftime
+  - xarray
+  - netcdf4
+  - dask
+  - tqdm
+  - pandas
+  - scipy
+  - scikit-learn
+  - xesmf >=0.8.10
+  - clisops
+
+  # CDS
+  - cdsapi
+  - xclim
+
+  # Install latest clisops & patched xesmf via pip
+  - pip:
+      # - git+https://github.com/roocs/clisops.git@regrid_updates_and_output_fixes # PR 447
+      # - git+https://github.com/sol1105/xESMF.git@domain_mask_nearest  # PR 444

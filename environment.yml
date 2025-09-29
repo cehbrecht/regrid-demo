@@ -16,6 +16,9 @@ dependencies:
   - netcdf4
   - dask
 
+  # CDS
+  - cdsapi
+
   # Install latest clisops & patched xesmf via pip
   - pip:
       - git+https://github.com/roocs/clisops.git@regrid_updates_and_output_fixes # PR 447

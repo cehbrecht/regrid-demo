@@ -3,7 +3,7 @@ channels:
   - conda-forge
 dependencies:
   # Core
-  - python=3.11
+  - python >=3.11
   - pip
 
   # Jupyter / Dev
@@ -12,12 +12,20 @@ dependencies:
   - ipywidgets
   - matplotlib
   - cartopy
+  - cf_xarray
+  - cftime
   - xarray
   - netcdf4
   - dask
+  - tqdm
+  - pandas
+  - scipy
+  - scikit-learn
+  - xesmf >= 0.8.10
 
   # CDS
   - cdsapi
+  - xclim
 
   # Install latest clisops & patched xesmf via pip
   - pip:
